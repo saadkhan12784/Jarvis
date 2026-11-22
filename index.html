@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#4f46e5">
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/icon.svg">
+<title>Jarvis – Study Helper</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--text:#1d2433;--muted:#6b7385;--accent:#4f46e5;--accent-t:#fff;--user:#e0e7ff;--border:#e2e5ee}
+@media (prefers-color-scheme:dark){:root{--bg:#12141c;--card:#1c2030;--text:#eceef5;--muted:#9aa2b8;--accent:#818cf8;--accent-t:#12141c;--user:#2a3050;--border:#2c3248;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.wrap{max-width:640px;margin:0 auto;padding:14px;display:flex;flex-direction:column;min-height:100vh}
+h1{font-size:22px;margin:4px 0 2px}.sub{color:var(--muted);font-size:14px;margin:0 0 12px}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+select{flex:1;min-width:110px;padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:15px}
+#chat{flex:1;display:flex;flex-direction:column;gap:10px;padding:6px 0 12px}
+.msg{padding:10px 13px;border-radius:14px;max-width:92%;white-space:pre-wrap;word-wrap:break-word}
+.me{align-self:flex-end;background:var(--user)}.ai{align-self:flex-start;background:var(--card);border:1px solid var(--border)}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px}
+.chip{flex:none;padding:8px 12px;border-radius:20px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px}
+.bar{display:flex;gap:8px;position:sticky;bottom:0;background:var(--bg);padding:8px 0}
+textarea{flex:1;padding:11px;border-radius:12px;border:1px solid var(--border);background:var(--card);color:var(--text);font:inherit;resize:none;height:46px}
+.send{padding:0 18px;border:0;border-radius:12px;background:var(--accent);color:var(--accent-t);font-weight:600;font-size:15px}
+.send:disabled{opacity:.5}.note{color:var(--muted);font-size:12px;text-align:center;margin:4px 0}
+</style>
+  </head>
